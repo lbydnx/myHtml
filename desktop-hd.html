@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            max-width: 1366px;
+            margin: 0 auto;
+        }
+
+        .main {
+            max-width: 1366px;
+            margin: 0 auto;
+        }
+
+        .box {
+            display: flex;
+        }
+
+        .box .left {
+
+
+            height: 970px;
+            margin-left: 150px;
+            margin-right: 22px;
+
+        }
+
+        .box .right {
+
+            height: 970px;
+            margin-right: 143px;
+        }
+
+        .box .left .one {
+
+            width: 273px;
+            height: 206px;
+            margin-right: 19px;
+        }
+
+        .text-desc {
+            display: block;
+            width: 141px;
+            height: 19px;
+            overflow-wrap: break-word;
+            color: rgba(84, 95, 102, 1);
+            font-size: 16px;
+            font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+            text-align: left;
+            white-space: nowrap;
+            line-height: 18px;
+            margin: 13px 0 0 2px;
+        }
+
+        .text_web {
+            width: 157px;
+            height: 18px;
+            overflow-wrap: break-word;
+            color: rgba(137, 148, 156, 1);
+            font-size: 16px;
+            font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+            text-align: left;
+            white-space: nowrap;
+            line-height: 18px;
+        }
+
+        .thumbnail_1 {
+            margin: 0 5px;
+        }
+
+        .bigoneleft:nth-child(n) {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .rightbottom {
+            display: flex;
+            margin-top: 16px;
+        }
+
+        .text_2 {
+            width: 551px;
+            height: 36px;
+            overflow-wrap: break-word;
+            color: rgba(84, 95, 102, 1);
+            font-size: 20px;
+            font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+            text-align: left;
+            white-space: nowrap;
+            line-height: 34px;
+        }
+
+        .text {
+            font-family: Lucida Grande;
+            font-size: 16px;
+            text-align: left;
+            color: #89949C;
+            display: block;
+            margin-bottom: 135px;
+        }
+
+        .bottomlfet {
+            margin-right: 20px;
+        }
+        .bottomright p:nth-child(n+2) {
+            font-size: 16px;
+            font-family: SFNS-Regular, SFNS;
+            font-weight: 400;
+            color: #FFFFFF;
+            line-height: 25px;
+        }
+
+        .bottomright p:nth-child(-n+1) {
+            font-size: 20px;
+            font-family: SFNS-Regular, SFNS;
+            font-weight: 400;
+            color: #FFFFFF;
+            line-height: 25px;
+        }
+
+        .bottomlfetp1 {
+            margin-bottom: 18px;
+        }
+
+
+
+        .content {
+            display: flex;
+            margin-left: 145px;
+            /* background-color: pink; */
+            padding: 8px 0;
+        }
+
+        .head1 {
+            margin-right: 20px;
+        }
+
+        .head2 {
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+            left: 190px;
+            top: 10px;
+            width: 520px;
+            height: 34px;
+            border: 1px solid rgba(213, 219, 222, 1);
+            margin-right: 300px;
+        }
+
+        .mid {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .m2 {
+            background-color: #49BCB7;
+            width: 25%;
+            height: 2px;
+        }
+
+        .m1 {
+            background-color: #FCB64B;
+
+            width: 25%;
+            height: 2px;
+        }
+
+        .m3 {
+            background-color: #EE4256;
+            width: 25%;
+            height: 2px;
+        }
+
+        .m4 {
+            background-color: #FCB64B;
+            width: 25%;
+            height: 2px;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            margin: 16px 0 0;
+        }
+        .ixjhd {
+            background: red;
+            padding: 16px 16px 169px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="content">
+            <div class="head1">
+                <img
+                    src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngdb7960d6eb0152f252d542068f1ac0bb9f79579bcb7c2c9675592e784bfddb5a">
+            </div>
+            <div class="head2">
+                <img style="margin: 0 4px"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAIAAADZrBkAAAAACXBIWXMAABJ0AAASdAHeZh94AAAAEXRFWHRTb2Z0d2FyZQBTbmlwYXN0ZV0Xzt0AAAGrSURBVCiRnZPLjtswDEVJUbYl2UlaNIPpA/3/T+sinUwS62FbEtlFikydBkXbu5PAg3sJkigi8O9S/8EAgL57h5RGH6dlERYisqbbDM607V0Z3kJW5uPpMoaQS2EWEEFEpVTXtrtNvx0GpfCB28vpfB49s2ycs6ZTSpVaQ0xpXvjCAPhuO6wwEUnTfBkDs+zf7wZnG60RkZmt6c5jGH24eG+61nTtLxjAaRxzKbtNv+37pvkZgYgskQjknOcl+5humAIAEAlpEpFN35OmVesAXdtYYyrXaZ5v/+rqVisDgNaEcC9SShOJALOsMATQSgFArfX32TNzZUZEIrXCANAag4g+pFrrHbbkkuaZlOraZu2GsNsOmujig49pyYVZRISZ5yWPMcaUNFFv7WoAiDg4ux3c2YfDy+s0LL01pFSu1YcYYqrM0CDiW+NvW8LMh+NpDLHUIgIigoiIeF0OZnHGfNx/aFu9wq4KMZ19mOZZRDSRs2ZwLpdyOL7mXKwxX56ftKZ77KFEJMTp2/eXUsrg7NdPz391OIjonPn8tLemI6IHIf/sWSsjAhH9AGgSBM/e+oTyAAAAAElFTkSuQmCC">
+                <span style="color: #D5DBDE;">Search your pocket</span>
+            </div>
+            <div class="head3">
+                <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngabe8fc385bc8f304c00b60a10c8ce8abdd418fc351079a254aabf9df77664df2"
+                    alt="">
+            </div>
+
+
+        </div>
+    </header>
+    <div class="mid">
+        <div class="m1"></div>
+        <div class="m2"></div>
+        <div class="m3"></div>
+        <div class="m4"></div>
+    </div>
+    <div class="box">
+        <div class="left">
+            <div class="bigoneleft">
+                <div class="one">
+                    <img
+                        src="https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/816b40d0166844b99d8f38fbfca058f1_mergeImage.png">
+                    <span class="text-desc">Flowerfull&nbsp;portaits</span>
+                    <div class="flex">
+                        <img class="thumbnail_1" referrerpolicy="no-referrer"
+                            src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng32c493175f4b450079f60accc936217e0b37a4de3eccd34ff8b2078bf48f45d1" />
+                        <span class="text_web">marcellomonreal.com</span>
+                    </div>
+                </div>
+
+                <div class="two">
+                    <img
+                        src="https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/6bebae03b70d443f8427cb0883f019f9_mergeImage.png">
+                    <span class="text-desc">Fascinating&nbsp;3d&nbsp;Architecture</span>
+                    <div class="flex">
+                        <img src="https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/4fc7ed454222451aadb327fd0c53bc73_mergeImage.png"
+                            class="blackpoint">
+                        <span class="text_web" style="margin-left: 5px;">artstation.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bigoneleft">
+                <div class="one">
+                    <img
+                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng33c143d38ea20561bb9520a535e767e0de382593c9a1b70caaea9489aa46ec2f">
+                    <span class="text-desc">Best&nbsp;of&nbsp;the&nbsp;Week:&nbsp;UI&nbsp;Design</span>
+                    <div class="flex">
+                        <img class="thumbnail_1" referrerpolicy="no-referrer"
+                            src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng32c493175f4b450079f60accc936217e0b37a4de3eccd34ff8b2078bf48f45d1" />
+                        <span class="text_web">marcellomonreal.com</span>
+                    </div>
+
+                </div>
+
+                <div class="two">
+                    <img
+                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngb17d145af9d59ee84c91f93b95aa14551441db680806523fc3afd0b0490ef20a">
+                    <span class="text-desc">Paktor&nbsp;ap</span>
+                    <div class="flex">
+                        <img src="https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/4fc7ed454222451aadb327fd0c53bc73_mergeImage.png"
+                            class="blackpoint">
+                        <span class="text_web" style="margin-left: 3px;">artstation.com</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="bigoneleft">
+                <div class="one">
+                    <img
+                        src="https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/42f0066157984014a45353955b213361_mergeImage.png">
+                    <span class="text-desc">Unfold&nbsp;01&nbsp;Light&nbsp;Canvas</span>
+                    <div class="flex">
+                        <img class="thumbnail_1" referrerpolicy="no-referrer"
+                            src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng32c493175f4b450079f60accc936217e0b37a4de3eccd34ff8b2078bf48f45d1" />
+                        <span class="text_web">abduzeedo.com</span>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="righttop">
+                <span
+                    class="text_2">How&nbsp;Sketch&nbsp;took&nbsp;over&nbsp;200gb&nbsp;of&nbsp;our&nbsp;Macbooks</span>
+                <span class="text">
+                    Here at istrategylabs,
+                    Sketch by Bohemian Coding is a tool we use everyday <br>
+                    It's extremely intuitive,
+                    which you know if you have used it before! Recently <br>
+                    we ran into an issue-a caveat that took up between 60 and 200GB on our <br>
+                    hard drives
+                </span>
+                <div class="flex">
+                    <img class="thumbnail_1" referrerpolicy="no-referrer"
+                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng7951d7c9ace77b1c7731694790df5df8c094e44273fef1698fdb60fbf86f5d86" />
+                    <span class="text_web down">medium.com</span>
+                </div>
+
+            </div>
+
+
+
+            <div class="rightbottom">
+                <div class="bottomlfet">
+                    <div class="bottomlfetp1">
+                        <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng91cdfa912705a9c8bcab452b318a1a7d8b24192dd044640a251b3c59714ee0e6"
+                            style="display: block;">
+
+
+                        <span class="text-desc">
+                            Daily&nbsp;Inspiration&nbsp;#2132
+                        </span>
+                        <div class="flex">
+                            <img class="thumbnail_1"
+                                src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng32c493175f4b450079f60accc936217e0b37a4de3eccd34ff8b2078bf48f45d1" />
+                            <span class="text_web">marcellomonreal.com</span>
+                        </div>
+
+                    </div>
+                    <div class="bottomlfetp2">
+                        <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngca9fc328ca8de7b453ff5af000ef347880af8cd9285e3ac0fbe91e084e6d71a4"
+                            style="display: block;">
+                            <span class="text-desc">Icon&nbsp;Design&nbsp;by&nbsp;Nick&nbsp;Kumbari</span>
+                        <div class="flex">
+                            <img class="thumbnail_1"
+                                src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng32c493175f4b450079f60accc936217e0b37a4de3eccd34ff8b2078bf48f45d1">
+                            <span class="text_web">marcellomonreal.com</span>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="bottomright">
+                    <div class="ixjhd">
+                        <p>
+                            Don t compete . Create
+                        </p>
+
+                        <p>
+                            Competiton and creativity . <br>
+                            Sometimes they blur together . But <br>
+                            in reality , they're different thought <br>
+                            systems <br>
+                        </p>
+
+                        <p style="margin: 32px 0 0;">
+                            Animals compete . They piss on <br>
+                            each other's territory and raid <br>
+                            each other's nests
+                        </p>
+
+                        <p style="margin: 32px 0 0;">
+                            We humans can do this too , if we <br>
+                            so choose . In fact . we do it a lot
+                        </p>
+                    </div>
+
+                    <div class="flex">
+                        <img class="thumbnail_1" referrerpolicy="no-referrer"
+                            src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng7951d7c9ace77b1c7731694790df5df8c094e44273fef1698fdb60fbf86f5d86" />
+                        <span class="text_web down">medium.com</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
