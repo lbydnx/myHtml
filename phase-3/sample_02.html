@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            
+
+        }
+
+        .box {
+            width: 1473px;
+            height: 892px;
+            background-color: #1A2045;
+            padding: 170px 236px 169px 237px;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .content .left {
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .content .left .top {
+            background-image: url(https://test-order-qzc.oss-cn-chengdu.aliyuncs.com/ai-html/9999.png);
+            padding: 11px 24px 0;
+            background-repeat: no-repeat;
+            
+        }
+
+        .content .left .top .san {
+
+
+            font-size: 26px;
+            font-family: SFNS-Regular, SFNS;
+            font-weight: 400;
+            color: #FFFFFF;
+            line-height: 30px;
+            text-align: center;
+
+
+        }
+
+        .content .left .top .usa {
+
+            font-size: 14px;
+            font-family: SFNS-Regular, SFNS;
+            font-weight: 400;
+            color: #FFFFFF;
+            line-height: 17px;
+            text-align: center;
+        }
+
+        .content .left .top .wether {
+            display: flex;
+            margin-bottom: 44px;
+
+        }
+
+        .content .left .top .wd {
+            flex: 1;
+            font-size: 12px;
+            font-family: SFNS-Regular, SFNS;
+            font-weight: 400;
+            color: #FFFFFF;
+            line-height: 15px;
+            margin-left: 9px;
+        }
+
+
+
+        .content .left .top .photos {
+            margin-bottom: 68px;
+        }
+
+        .left .mid {
+            padding: 15px 31px 16px 23px;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .mid .qifei {
+            display: flex;
+
+        }
+
+        .mid .qifei .departure {
+            font-size: 12px;
+            font-family: SFNS-Regular, SFNS;
+            font-weight: 400;
+            color: #A3A3A3;
+            line-height: 15px;
+        }
+
+        .mid .qifei .departure .am {
+            font-size: 18px;
+            font-family: SFNS-Regular, SFNS;
+            font-weight: 400;
+            color: #383838;
+            line-height: 21px;
+        }
+
+        .left .midline {
+            padding: 15px 31px 16px 23px;
+            background-color: #fff;
+            border-top: 1px solid #ECECEC;
+            font-size: 12px;
+            font-family: SFNS-Regular, SFNS;
+            font-weight: 400;
+            color: #A3A3A3;
+            line-height: 15px;
+            text-align: center;
+        }
+
+        .bottom {
+            padding: 29px 39px 25px 24px;
+            background-color: #F3F3F3;
+        }
+
+        .bottom .info {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .clas {
+            font-size: 12px;
+            font-family: SFNS-Regular, SFNS;
+            font-weight: 400;
+            color: #A3A3A3;
+            line-height: 15px;
+        }
+
+        .passager {
+            font-size: 18px;
+            font-family: SFNS-Regular, SFNS;
+            font-weight: 400;
+            color: #383838;
+            line-height: 21px;
+            margin-bottom: 12px;
+        }
+
+        .price {
+            font-size: 26px;
+            font-family: SFNS-Regular, SFNS;
+            font-weight: 400;
+            color: #39C881;
+            line-height: 30px;
+        }
+
+        .num {
+            font-size: 12px;
+            font-family: SFNS-Regular, SFNS;
+            font-weight: 400;
+            color: #383838;
+            line-height: 15px;
+        }
+
+        .splitline {
+            width: 2px;
+            height: 88px;
+            border: 1px solid #D7D7D7;
+        }
+
+        .flight {
+            width: 305px;
+            height: 60px;
+            font-size: 18px;
+            font-family: SFNS-Regular, SFNS;
+            font-weight: 400;
+            color: #FFFFFF;
+            line-height: 21px;
+            background-color: #39C881;
+            margin-top: 27px;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        .right {
+            position: relative;
+            background-image: url(https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/c76884a411b042b995eed5c5bbe2bfd5_mergeImage.png);
+            width: 650px;
+            padding:212px 98px 0px 51px;
+
+        }
+
+        
+
+        .destination {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 117px;
+
+        }
+
+        .paris {
+            font-size: 26px;
+            font-family: SFNS-Regular, SFNS;
+            font-weight: 400;
+            color: #FFFFFF;
+            line-height: 30px;
+        }
+
+        .france {
+            font-size: 14px;
+            font-family: SFNS-Regular, SFNS;
+            font-weight: 400;
+            color: #C3BBE3;
+            line-height: 17px;
+        }
+
+        .feiji {
+            position: absolute;
+            top: 196px;
+            left: 250px;
+        }
+
+        .cha {
+            position: absolute;
+            top: 24px;
+            left: 569px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="content">
+            <div class="left">
+                <div class="top">
+                    <div class="wether">
+                        <img src="https://test-order-qzc.oss-cn-chengdu.aliyuncs.com/ai-html/12.png" alt="">
+                        <div class="wd">+17℃</div>
+                        <img class="heart" src="https://test-order-qzc.oss-cn-chengdu.aliyuncs.com/ai-html/13.png"
+                            alt="">
+                    </div>
+                    <div class="photos">
+                        <div class="san">
+                            SAN FRANCISO
+                        </div>
+                        <div class="usa">
+                            California, USA
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mid">
+                    <div class="qifei">
+                        <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngf2ba31617471e12dd01232ffef96cb8a1f9f57894a8e5c6eff961efed35d4709"
+                            alt="">
+                        <div class="departure">
+                            Departure
+                            <div class="am">
+                                10:40 AM
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="qifei">
+                        <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngefe31c95519d070c9c1d20a17fab0230b46f36fbfcd507cf079b8d66d2413021"
+                            alt="">
+                        <div class="departure">
+                            Arrival
+                            <div class="am">
+                                12:55 AM
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="midline">
+                    Flight time: 2h. 15min., same day arriwal
+                </div>
+                <div class="bottom">
+                    <div class="info">
+                        <div class="info1">
+                            <div class="clas">
+                                Class
+                            </div>
+                            <div class="passager">
+                                Economy
+                            </div>
+                            <div class="clas">
+                                Passengers
+                            </div>
+                            <div class="passager">
+                                2
+                            </div>
+                        </div>
+                        <div class="splitline">
+
+                        </div>
+                        <div class="info2">
+                            <div class="price">
+                                €159.99
+                            </div>
+                            <div class="num">
+                                / per person
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight">
+                        BOOK THIS FLIGHT
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="cha">
+                    <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngf27710c7e1f567d1f3e0b63c6d94e513e1d04a1e6a4a73d969b3256cf1624a46" alt="">
+                </div>
+                <img class="feiji"
+                    src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngc040ccbd1f0d93b25ba89c0abaa30701a42e67e9cb58f3ff90203156a99291ae"
+                    alt="">
+                <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngd1e38e764ef93387f68bda5470c941b2f8734203d7852ccf81b9a09e721c5668"
+                    alt="">
+                <div class="destination">
+                    <div class="start">
+                        <div class="paris">
+                            PARIS
+                        </div>
+                        <div class="france">
+                            France, Europe
+                        </div>
+                    </div>
+
+                    <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng288a0d5c85692139a21ef68421bb5ae9dd5b61a1bcfe34c0eed1dff8dda110f7"
+                        alt="">
+
+                    <div class="start">
+                        <div class="paris">
+                            SAN FRANCISCO
+                        </div>
+                        <div class="france">
+                            California, USA
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
