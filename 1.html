@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            /* border: 1px solid red; */
+        }
+
+        .box {
+            width: 1440px;
+            /* background-color: skyblue; */
+            height: 1024px;
+            display: flex;
+        }
+
+        .box .leftnav {
+            width: 87px;
+        }
+
+        .box .leftnav img {
+            transform: translateY(-6px);
+        }
+
+        .box .search {
+            width: 1353px;
+            display: flex;
+            height: 87px;
+            /* justify-content: center; */
+
+
+        }
+
+        .box .search .fdj {
+            margin: 28px 24px 31px 31px;
+        }
+
+        .box .search .shousuo {
+            margin: 31px 128px 35px 0px;
+            height: 21px;
+            font-size: 17px;
+            font-family: AppleSystemUIFont;
+            color: #97A4B3;
+            line-height: 20px;
+
+        }
+
+        .box .search .user {
+            display: flex;
+            height: 87px;
+            width: 1218px;
+            justify-content: flex-end;
+
+        }
+
+        .box .search .user .photo {
+            margin: 20px 0 22px 0;
+        }
+
+        .box .search .user .username {
+            font-size: 17px;
+            font-family: AppleSystemUIFont;
+            color: #425060;
+            line-height: 20px;
+            margin: 31px 17px 35px 22px;
+        }
+
+        .box .search .user .pull img {
+            margin: 39px 27px 41px 17px;
+        }
+
+        .box .content {
+            width: 1353px;
+            height: 937px;
+            background-color: #F7F9FA;
+
+        }
+
+        .box .content .overview {
+            width: 71px;
+            font-size: 12px;
+            font-family: AppleSystemUIFont;
+            color: #9AAAB8;
+            line-height: 15px;
+            margin: 0px 1225px 23px 57px;
+            padding-top: 20px;
+        }
+
+        .box .content .mainnr {
+            width: 1243px;
+            height: 814px;
+            margin: 0 53px 65px 57px;
+            background-color: #fff;
+            padding: 45px 39px 65px 43px;
+
+        }
+
+        .mainnr .top {
+            padding: 45px 45px 60px;
+            justify-content: space-between;
+            
+            display: flex;
+        }
+
+        .mainnr .top .lefttop .p1 {
+            background-image: url(https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng2a1ef27f493799398360a0d7c422a79b4c842ac47278c4d60faa6adc67b74f8a);
+            width: 264px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            padding: 33px 13px 20px 24px;
+
+        }
+
+        .mainnr .top .lefttop .p1 .time {
+            width: 104px;
+            height: 17px;
+            font-size: 14px;
+            font-family: AppleSystemUIFont;
+            color: #FFFFFF;
+            line-height: 17px;
+            padding: 0 0 0 8px;
+        }
+
+        .startup {
+            font-size: 40px;
+            font-family: AppleSystemUIFont;
+            color: #FFFFFF;
+            line-height: 51px;
+            padding: 156px 0 45px;
+        }
+
+        .readmore {
+            width: 73px;
+            height: 18px;
+            font-size: 15px;
+            font-family: AppleSystemUIFont;
+            color: #FFFFFF;
+            line-height: 18px;
+            padding: 0 0 0 8px;
+        }
+
+        .righttop {
+            padding: 45px 39px 60px 35px;
+            background: #000;
+        }
+
+        .card {
+            width: 264px;
+
+        }
+
+        .card .tupian {
+            width: 100%;
+            height: 178px;
+        }
+
+        .art {
+
+            font-size: 23px;
+            font-family: AppleSystemUIFont;
+            color: #4B5B6C;
+            line-height: 27px;
+            margin: 0 35px 10px 0;
+        }
+
+        .word {
+            width: 260px;
+            height: 78px;
+            font-size: 14px;
+            font-family: AppleSystemUIFont;
+            color: #AEBCC8;
+            line-height: 26px;
+            margin-bottom: 25px;
+        }
+
+        .read {
+            width: 73px;
+            height: 18px;
+            font-size: 15px;
+            font-family: AppleSystemUIFont;
+            color: #0075FF;
+            line-height: 18px;
+        }
+
+        .date {
+            color: #9AAAB8;
+        }
+
+        .liubai {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .bottom {
+            margin-top: 15px;
+            display: flex;
+            padding-left: 45px;
+        }
+
+        .fsdfasd {
+            flex: 1;
+            margin: 0 0 0 7px;
+            padding-top: 20px;
+        }
+
+        .very {
+            font-size: 23px;
+            font-family: AppleSystemUIFont;
+            color: #4B5B6C;
+            line-height: 27px;
+            margin-right: 19px;
+        }
+
+        .of {
+            font-size: 14px;
+            font-family: AppleSystemUIFont;
+            color: #BFCCD5;
+            line-height: 26px;
+        }
+
+        .down {
+            padding-top: 20px;
+            display: flex;
+
+        }
+
+        .yingying {
+            display: flex;
+            align-items: center;
+        }
+
+        .last {
+            width: 76px;
+            height: 22px;
+            font-size: 12px;
+            font-family: AppleSystemUIFont;
+            color: #0087FF;
+            line-height: 24px;
+            background: rgba(0, 117, 255, 0.1);
+            border-radius: 18px;
+            text-align: center;
+        }
+        .date1 {
+            margin-left: 95px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="leftnav">
+            <img
+                src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngc39a3ab2739ae83c120cc31e0439b67e1816889aa07d45fb319b1372fa1a8201">
+        </div>
+        <div class="right">
+
+            <div class="search">
+                <div class="fdj">
+                    <img
+                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngb0878d88e91cd037a228ae9c594d663d1be221da85b8123484e35b11179661a0">
+                </div>
+                <div class="shousuo">
+                    search
+                </div>
+                <div class="user">
+                    <div class="photo">
+                        <img src="https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/320e45f6b4084d3ab0d2cc15a619b157_mergeImage.png"
+                            alt="">
+                    </div>
+                    <div class="username">
+                        Anna Atkinson
+                    </div>
+                    <div class="pull">
+                        <img
+                            src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngd4d8d7f8846793002c942968471762c0a1daa136fb82c76e98cfcd374059d7c1">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="overview">
+                    overview
+                </div>
+                <div class="mainnr">
+                    <div class="top">
+                        <div class="lefttop">
+                            <div class="p1">
+                                <div class="time">
+                                    June 15, 2020
+                                </div>
+                                <div class="startup">The startup funding</div>
+                                <div class="readmore">Read</div>
+                                <div class="readmore">more</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="tupian"
+                                src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng8b70779751e85720f15ae9da4023f3b451b40d79cb9ba6b5de54c61aee6d4445"
+                                alt="">
+                            <div class="art">
+                                This very first article
+                            </div>
+                            <div class="word">
+                                is a long established fact that a readeil be distracted bv the readableontent one more
+                                filler word
+                            </div>
+                            <div class="liubai">
+                                <div class="read">
+                                    Read more
+                                </div>
+                                <div class="date">
+                                    June 15, 2020
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="card">
+                            <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng2c66b31192c9938c61f8b406bdaaa365b28db331f66098a6a706c7926d8b4468"
+                                alt="">
+                            <div class="art">
+                                This very first article
+                            </div>
+                            <div class="word">
+                                is a long established fact that a readeil be distracted bv the readableontent one more
+                                filler word
+                            </div>
+                            <div class="liubai">
+                                <div class="read">
+                                    Read more
+                                </div>
+                                <div class="date">
+                                    June 15, 2020
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng5afb463d9b2f2b9a0c55bbe399e0a7521371fc9398a7fe551e98b902ee5bbe0c"
+                                alt="">
+                            <div class="art">
+                                This very first article
+                            </div>
+                            <div class="word">
+                                It is a long established fact that a reader will be distracted by the readable content
+                                one more filler word.
+                            </div>
+                            <div class="liubai">
+                                <div class="read">
+                                    Read more
+                                </div>
+                                <div class="date">
+                                    June 15, 2020
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mid">
+                        <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngc50becb4e6d461b098af7b91b016d338e2c84bed435b330a40ec0297bc8bc333"" style="
+                            width: 100%;" alt="">
+                    </div>
+                    <div class="bottom">
+                        <div class="bottomcard">
+                            <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng67f2b280b803d5c59b715d41887348eb38af5b03d4233e87d561e586b651a2ab"
+                                alt="">
+                        </div>
+                        <div class="fsdfasd">
+                            <div class="yingying">
+                                <div class="very">
+                                    This very first article
+                                </div>
+                                <div class="last">
+                                    LATEST
+                                </div>
+                            </div>
+
+
+                            <div class="of">
+                                It is a long established fact that a reader will be distracted by the readable content
+                                one more filler word. I must explain to you how all this mistaken idea of denouncing
+                                pleasure and praising pain was born and I will give you a complete account of the
+                                system,.
+                            </div>
+
+                            <div class="down">
+                                <div class="read">
+                                    Read more
+                                </div>
+                                <div class="date date1">
+                                    June 15, 2020
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
