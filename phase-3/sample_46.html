@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            /* border: 1px solid red; */
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        .box {
+            position: relative;
+            width: 1600px;
+            /* height: 1200px; */
+            background: #FEB6B5;
+            padding: 105px 63px 98px;
+        }
+
+        .zhuanshi {
+            position: absolute;
+            bottom: 20px;
+            right: 10px;
+        }
+
+        .box .con {
+            padding-top: 1px;
+            position: relative;
+            /* width: 1084px; */
+            border-radius: 40px;
+            height: 991px;
+            background: url(https://test-order-qzc.oss-cn-chengdu.aliyuncs.com/ai-html/58.png) no-repeat;
+            background-position: -85px -84px;
+            background-size: 1642px;
+            box-shadow: 6px 11px 47px 0px rgba(207, 96, 95, 0.7700);
+        }
+
+        .dayu {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .shuye {
+
+            position: absolute;
+            right: -242px;
+            bottom: -264px;
+        }
+
+        .green {
+
+            position: absolute;
+            right: -129px;
+            bottom: -190px;
+        }
+
+
+        .two {
+            position: absolute;
+            right: 75px;
+            top: 155px;
+            width: 64px;
+            height: 78px;
+            font-size: 59px;
+            font-family: Helvetica;
+            color: #FFFFFF;
+            line-height: 70px;
+            text-shadow: 6px 11px 47px rgba(207, 96, 95, 0.7700);
+        }
+
+        .sandian {
+            position: absolute;
+            right: 55px;
+            top: 136px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .sandian .dian {
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            border: 1px solid #6766A0;
+            margin: 0 0 12px 0;
+        }
+
+        .box .con .header {
+            display: flex;
+            margin: 28px 0 0 196px;
+        }
+
+        .box .con .header .wetrip {
+            display: flex;
+            align-items: center;
+        }
+
+        .box .con .header .we {
+            width: 53px;
+            height: 53px;
+            background: #32316A;
+            box-shadow: 6px 11px 47px 0px rgba(207, 96, 95, 0.7700);
+            border-radius: 50%;
+            padding: 10px 0 14px 13px;
+            font-size: 26px;
+            font-family: Helvetica;
+            color: #fff
+        }
+
+        .box .con .header .trip {
+            font-size: 26px;
+            font-family: Helvetica;
+            color: #32316A
+        }
+
+        .header .explorer {
+            padding: 15px 0 0 0;
+            font-size: 16px;
+            font-family: Helvetica;
+            color: #FFFFFF;
+            line-height: 19px;
+            letter-spacing: 2px;
+            text-shadow: 6px 11px 47px rgba(207, 96, 95, 0.7700);
+        }
+
+        .header .common {
+
+            font-size: 14px;
+            font-family: Helvetica;
+            color: #32316A;
+            line-height: 51px;
+            letter-spacing: 2px;
+            text-shadow: 6px 11px 47px rgba(207, 96, 95, 0.7700);
+        }
+
+        .explorer .yellow {
+            margin: 2px 0 0 22px;
+            width: 26px;
+            height: 4px;
+            background: #FFC06C;
+            box-shadow: 6px 11px 47px 0px rgba(207, 96, 95, 0.7700);
+        }
+
+        .dis {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 157px;
+        }
+
+        .xiaozi {
+            margin-right: 67px;
+        }
+
+        .mid {
+            display: flex;
+            margin: 277px 0 0 42px;
+        }
+
+        .mid .part1 .plor {
+
+            font-size: 50px;
+            font-family: Helvetica;
+            color: #32316A;
+            line-height: 100px;
+            letter-spacing: 10px;
+        }
+
+        .mid .part1 .way {
+
+            font-size: 100px;
+            font-family: Helvetica;
+            color: #FFFFFF;
+            line-height: 100px;
+            letter-spacing: 11px;
+            text-shadow: 0px 6px 23px rgba(0, 0, 0, 0.0800);
+        }
+
+        .mid .part2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            position: relative;
+            padding-top: 149px;
+            margin-left: 132px;
+        }
+
+        .mid .part2 .bofanqi {
+            position: absolute;
+            top: 322px;
+            left: -33px;
+        }
+
+        .mid .part2 .sentence {
+            margin-bottom: 131px;
+            font-size: 18px;
+            font-family: Helvetica;
+            color: #FFFFFF;
+            line-height: 30px;
+            letter-spacing: 1px;
+            text-shadow: 0px 2px 9px rgba(0, 0, 0, 0.6800);
+        }
+
+        .mid .part2 .now {
+            padding: 11px 24px 13px 51px;
+            width: 178px;
+            height: 43px;
+            background: #FFFFFF;
+            border-radius: 22px;
+        }
+
+        .end {
+            margin: 248px 0 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="con">
+            <div class="header">
+                <!-- <div class="wetrip">
+                    <div class="we">
+                        we
+                    </div>
+                    <div class="trip">
+                        trip
+                    </div>
+                </div> -->
+                <div class="dis">
+                    <div class="explorer xiaozi">
+                        Explore
+                        <div class="yellow">
+
+                        </div>
+                    </div>
+
+                    <div class="common xiaozi">
+                        Let’s Trek
+                    </div>
+
+                    <div class="common xiaozi">
+                        Adventure
+                    </div>
+
+                    <div class="common xiaozi">
+                        Contact Us
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="mid">
+                <div class="part1">
+                    <div class="plor">
+                        EXPLOR
+                    </div>
+                    <div class="way">
+                        NORWAY
+                    </div>
+                </div>
+                <div class="part2">
+                    <div class="sentence">
+                        Craggy summits and rounded rock formations are important <br>
+                        parts of the national identity.
+                    </div>
+                    <div class="now">
+                        Explore Now
+                    </div>
+
+                    <img class="bofanqi"
+                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngbc01e6c9c6fa95618d94f3028cdb16fe90569acc08559c970addad711113627d"
+                        width="100px" height="100px" alt="">
+                </div>
+
+
+            </div>
+            <div class="end">
+                <!-- <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngddacd383dc93e0db3fc642167bffd6bd9c4c60f1f2bbcfc6c402d9f43857bc8f"
+                    alt="" > -->
+            </div>
+
+            <!-- <img class="shuye"
+                src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng9d7bb977d88c6e9d1bec2ba7855895d32ccbb4d060a4e223fcb16571a59d1efe"
+                alt="">
+            <img class="green"
+                src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng8c3c493388adc81c2c766d19c67b1769134232965514a0851facdb2c6d95bb85"
+                alt=""> -->
+
+
+
+
+            <!-- <img class="dayu"
+                src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng3f48d36ad45275555358d9b07c0efe08f05fe28d6ba37c257736c250a4442db1"
+                alt="">
+            <div class="two">
+                02
+            </div> -->
+            <div class="sandian">
+                <div class="dian" style="background-color: #fff;"></div>
+                <div class="dian"></div>
+                <div class="dian"></div>
+                <div class="dian"></div>
+            </div>
+        </div>
+        <img class="zhuanshi"
+            src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng5e3829944850b45e39a879f32fdf20d54813f77411af2b9ee36e051e2b2bfab4"
+            alt="">
+    </div>
+</body>
+
+</html>
