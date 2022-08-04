@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        .root {
+            position: relative;
+            width: 1176px;
+            height: 1088px;
+            background: linear-gradient(180deg, #678AFF 0%, #7826C6 100%) linear-gradient(248deg, rgba(48, 135, 205, 0.5000) 0%, rgba(85, 16, 103, 0.5000) 54%, rgba(64, 159, 154, 0.5000) 100%) linear-gradient(303deg, rgba(255, 12, 77, 0.5000) 0%, rgba(58, 52, 154, 0.5000) 100%);
+        }
+
+        .popup {
+            padding: 138px 175px 0;
+            width: 705px;
+            height: 883px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+        .start {
+            text-align: center;
+            height: 49px;
+            font-size: 41px;
+            font-family: HelveticaNeue;
+            color: #646464;
+            line-height: 49px;
+        }
+
+        .reg {
+            text-align: center;
+            height: 29px;
+            font-size: 23px;
+            font-family: HelveticaNeue-Light, HelveticaNeue;
+            font-weight: 300;
+            color: #949494;
+            line-height: 29px;
+            margin-top: 2px;
+            margin-bottom: 42px;
+        }
+
+        .group {
+            position: relative;
+        }
+
+        .group>.zd {
+            position: absolute;
+            z-index: 1;
+            top: 171px;
+            right: 2px;
+            width: 78px;
+            height: 58px;
+            background: rgba(255, 255, 255, 0.76);
+            border-radius: 0px 2px 2px 0px;
+            border-left: 1px solid #c7c7c7;
+            text-align: center;
+            line-height: 58px;
+        }
+
+        .group .show {
+            text-align: center;
+            width: 44px;
+            height: 15px;
+            font-size: 14px;
+            font-family: HelveticaNeue;
+            color: #678AFF;
+            line-height: 15px;
+        }
+
+        .group .white {
+            padding-top: 6px;
+            padding-left: 9px;
+            margin-bottom: 25px;
+            width: 354px;
+            height: 60px;
+            background: #FFFFFF;
+            border-radius: 2px;
+            opacity: 0.76;
+            border: 1px solid #979797;
+        }
+
+        .group .name {
+            margin-bottom: 7px;
+            height: 17px;
+            font-size: 15px;
+            font-family: HelveticaNeue-Light, HelveticaNeue;
+            font-weight: 300;
+            color: #678AFF;
+            line-height: 17px;
+        }
+
+        .group .kris {
+            height: 25px;
+            font-size: 21px;
+            font-family: HelveticaNeue-Light, HelveticaNeue;
+            font-weight: 300;
+            color: #0B0B0B;
+            line-height: 25px;
+        }
+
+        .xieyi {
+            margin-top: 14px;
+        }
+
+        .xieyi1 {
+            margin-top: 6px;
+        }
+
+        .zihegou {
+            display: flex;
+        }
+
+        .one {
+            display: flex;
+        }
+
+        .one .p1 {
+            margin-right: 17px;
+        }
+
+        .two {
+            display: flex;
+            margin-left: 22px;
+        }
+
+        .two .p2 {
+            margin-right: 7px;
+        }
+
+        .wenzi {
+            width: 138px;
+            height: 15px;
+            font-size: 12px;
+            font-family: HelveticaNeue-Light, HelveticaNeue;
+            font-weight: 300;
+            color: #949494;
+            line-height: 15px;
+        }
+
+        .reris {
+            margin: 26px 0 103px 0;
+            width: 354px;
+            height: 66px;
+            background: #3766FF;
+            border-radius: 2px;
+            text-align: center;
+            line-height: 66px;
+        }
+
+        .reris .zc {
+            text-align: center;
+            width: 92px;
+            height: 29px;
+            font-size: 25px;
+            font-family: HelveticaNeue;
+            color: #FFFFFF;
+            line-height: 29px;
+        }
+
+        .end {
+            display: flex;
+            justify-content: center;
+        }
+
+        .end .al {
+
+            font-size: 17px;
+            font-family: HelveticaNeue;
+            color: #636363;
+            line-height: 20px;
+        }
+
+        .end .log {
+
+            font-size: 17px;
+            font-family: HelveticaNeue;
+            color: #678AFF;
+            line-height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="root">
+        <div class="popup">
+
+            <div class="start">
+                Get Started.
+            </div>
+            <div class="reg">
+                Register in 20 seconds.
+            </div>
+
+            <div class="group">
+                <div class="zd">
+                    <span class="show">
+                        SHOW
+                    </span>
+                </div>
+                <div class="white">
+                    <div class="name">
+                        Name
+                    </div>
+
+                    <div class="kris">
+                        Kristen Page
+                    </div>
+                </div>
+
+                <div class="white">
+                    <div class="name">
+                        E-mail
+                    </div>
+
+                    <div class="kris">
+                        kristen@minimal.ly </div>
+                </div>
+
+                <div class="white">
+                    <div class="name">
+                        Password
+                    </div>
+
+                    <div class="kris">
+                        ************
+                    </div>
+                </div>
+            </div>
+
+            <div class="xieyi">
+                <div class="zihegou">
+                    <div class="one">
+                        <img class="p1" referrerpolicy="no-referrer"
+                            src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng7c815acd05ae7332764cfc17f3c73877273006e6b79920d6c60eae3eda398133" />
+
+                        <div class="wenzi">
+                            One uppercase characte
+                        </div>
+                    </div>
+
+
+                    <div class="two">
+                        <img class="p2" referrerpolicy="no-referrer"
+                            src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng7c815acd05ae7332764cfc17f3c73877273006e6b79920d6c60eae3eda398133" />
+
+                        <div class="wenzi">
+                            Seven characters at least
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="xieyi1">
+                <div class="zihegou">
+                    <div class="one">
+                        <img class="p1" referrerpolicy="no-referrer"
+                            src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng7c815acd05ae7332764cfc17f3c73877273006e6b79920d6c60eae3eda398133" />
+
+                        <div class="wenzi">
+                            One uppercase characte
+                        </div>
+                    </div>
+
+
+                    <div class="two">
+                        <img class="p2" referrerpolicy="no-referrer"
+                            src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng7c815acd05ae7332764cfc17f3c73877273006e6b79920d6c60eae3eda398133" />
+
+                        <div class="wenzi">
+                            One number
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="reris">
+                <span class="zc">
+                    Register
+                </span>
+            </div>
+
+            <div class="end">
+                <div class="al">
+                    Already a member?
+                </div>
+                <div class="log">
+                    Log In Here.
+                </div>
+            </div>
+</body>
+
+</html>
