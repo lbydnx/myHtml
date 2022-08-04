@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: 1px red solid;
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        .box {
+            padding: 212px 200px 200px 200px;
+            width: 1600px;
+
+            background: linear-gradient(180deg, #E5F6FF 0%, #C7EAFF 100%);
+        }
+
+        .box .black {
+            /* width: 1200px;
+            height: 788px; */
+            background: #343A41;
+            border-radius: 10px;
+            padding: 62px 0 0 0;
+        }
+
+        .black .top {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .black .top .nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .black .top .nav .long {
+            width: 49px;
+            height: 2px;
+            background: #39D8FF;
+        }
+
+        .black .top .nav .short {
+            width: 25px;
+            height: 2px;
+            background: #39D8FF;
+        }
+
+        .black .top .nav .middle {
+            width: 36px;
+            height: 2px;
+            background: #39D8FF;
+        }
+
+        .black .top .datetime {
+            display: flex;
+            align-items: center;
+        }
+
+        .black .top .datetime .week {
+
+            font-size: 20px;
+            font-family: Helvetica;
+            color: #39D8FF;
+            line-height: 24px;
+        }
+
+        .black .top .datetime .selct {
+            width: 144px;
+            height: 54px;
+            background: #272C31;
+            border-radius: 100px;
+            text-align: center;
+            line-height: 54px;
+        }
+
+        .black .top .datetime .month {
+            margin: 0 89px 0 125px;
+        }
+
+
+
+        .black .top .sandian {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .black .top .sandian .dian {
+            width: 6px;
+            height: 6px;
+            background: #39D8FF;
+            margin-left: 11px;
+            border-radius: 50%;
+        }
+
+        .black .content {
+            position: relative;
+            margin-top: 107px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .black .content .line {
+            margin-bottom: 69px;
+        }
+
+        .line:nth-child(2n+1) {
+            width: 1145px;
+            height: 1px;
+            background: #FFFFFF;
+            opacity: 0.1;
+        }
+
+        .line:nth-child(2n) {
+            width: 1200px;
+            height: 1px;
+            background: #FFFFFF;
+            opacity: 0.1;
+        }
+
+        .content .money {
+            width: 10px;
+            height: 19px;
+            font-size: 16px;
+            font-family: Helvetica;
+            color: #86A0BD;
+            line-height: 19px;
+        }
+
+        .content .twenty {
+            position: absolute;
+            top: -9px;
+            left: 19px;
+        }
+
+        .content .ten {
+            position: absolute;
+            top: 129px;
+            left: 15px;
+        }
+
+        .content .zero {
+            position: absolute;
+            top: 272px;
+            left: 22px;
+        }
+
+        ul {
+            list-style: none;
+            font-size: 16px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #86A0BD;
+            line-height: 22px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box .white {
+            /* width: 1200px;
+            height: 240px; */
+            background: #FFFFFF;
+            display: flex;
+            padding: 47px 64px 33px 90px;
+            border-radius: 10px;
+        }
+
+        .white .right .v {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .white .right .v .wz {
+            margin-right: 133px;
+            font-size: 20px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #262C33;
+            line-height: 28px;
+        }
+
+        .white .right .y {
+            margin-top: 17px;
+            display: flex;
+            justify-content: space-around;
+            font-size: 22px;
+            font-family: ArialMT;
+            color: #262C33;
+            line-height: 32px;
+        }
+
+        .white .right .y .kk {
+            width: 103px;
+            height: 103px;
+            border: 9px solid #DEE5EC;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 81px;
+            margin-right: 113px;
+        }
+
+        .white .left {
+            margin-left: 112px;
+        }
+
+        .white .left .source {
+            width: 156px;
+            height: 28px;
+            font-size: 20px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #343A41;
+            line-height: 28px;
+            text-align: center;
+            margin-left: 44px;
+            margin-bottom: 25px;
+        }
+
+        .white .left .zuxing {
+            display: flex;
+            
+        }
+
+        .white .left .zuxing .ju {
+            width: 14px;
+            height: 90px;
+            background: #DEE5EC;
+            border-radius: 4px;
+            margin-right: 76px;
+        }
+
+        .desc {
+            display: flex;
+            font-size: 16px;
+            font-family: Helvetica;
+            color: #343A41;
+            line-height: 19px;
+            text-align: center;
+        }
+
+        .desc .dir{
+            margin-right: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <div class="black">
+            <div class="top">
+                <div class="nav">
+                    <div class="long ">
+
+                    </div>
+                    <div class="short">
+
+                    </div>
+                    <div class="middle">
+
+                    </div>
+                </div>
+
+                <div class="datetime">
+                    <div class="selct week">
+
+                        Week
+
+                    </div>
+
+                    <div class="week month">
+                        Month
+                    </div>
+                    <div class="week year">
+                        Year
+                    </div>
+                </div>
+
+                <div class="sandian">
+                    <div class="dian"></div>
+                    <div class="dian"></div>
+                    <div class="dian"></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="money twenty">
+                    20k
+                </div>
+                <div class="money ten">
+                    10k
+                </div>
+                <div class="money zero">
+                    0
+                </div>
+            </div>
+
+            <ul>
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+            </ul>
+        </div>
+
+        <div class="white">
+            <div class="right">
+                <div class="v">
+                    <div class="wz">
+                        Visitors
+                    </div>
+                    <div class="wz">
+                        Views
+                    </div>
+                    <div class="wz">
+                        Clicks
+                    </div>
+                </div>
+                <div class="y">
+                    <div class="kk">
+                        70k
+                    </div>
+                    <div class="kk">
+                        20kk
+                    </div>
+                    <div class="kk">
+                        15k
+                    </div>
+                </div>
+            </div>
+            <div class="left">
+                <div class="source">
+                    Traffic Sources
+                </div>
+                <div class="zuxing">
+                    <div class="ju"></div>
+                    <div class="ju"></div>
+                    <div class="ju"></div>
+                    <div class="ju"></div>
+                </div>
+                <div class="desc">
+                    <div class="dir">Direct</div>
+                    <div class="dir">Searc <br> h</div>
+                    <div class="dir">Mail</div>
+                    <div class="dir">Referral <br> s</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
