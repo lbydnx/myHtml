@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            /* border: 1px red solid; */
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        .box {
+            display: flex;
+            width: 1440px;
+            height: 922px;
+            background: #FFFFFF;
+        }
+
+        .left {
+            background-repeat: no-repeat;
+            background-image: url(https://test-order-qzc.oss-cn-chengdu.aliyuncs.com/ai-html/120.png);
+            padding: 701px 40px 43px;
+            width: 340px;
+            height: 922px;
+            /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.1600) 0%, rgba(0, 0, 0, 0.8500) 100%); */
+        }
+
+        .left .why {
+            transform: scale(0.83);
+            transform-origin: left;
+            font-size: 12px;
+            font-family: AvenirNext-DemiBold, AvenirNext;
+            font-weight: 600;
+            color: rgba(255, 248, 248, 0.8400);
+        }
+
+        .left .down {
+            margin: 10px 0 20px;
+            width: 254px;
+            height: 46px;
+            font-size: 16px;
+            font-family: AvenirNext-Bold, AvenirNext;
+            font-weight: bold;
+            color: #FFFFFF;
+            line-height: 22px;
+        }
+
+        .left .ret {
+            width: 260px;
+            height: 58px;
+            font-size: 14px;
+            font-family: AvenirNext-Regular, AvenirNext;
+            font-weight: 400;
+            color: #FFFFFF;
+            line-height: 19px;
+            margin-bottom: 23px;
+        }
+
+        .right {
+            padding: 88px 321px 138px 97px;
+        }
+
+        .right .addion {
+
+            font-size: 36px;
+            font-family: Avenir-Heavy, Avenir;
+            font-weight: 800;
+            color: #5968AF;
+
+
+        }
+
+        .right .person {
+            margin: 14px 0 61px 0;
+            font-size: 20px;
+            font-family: AvenirNext-Medium, AvenirNext;
+            font-weight: 500;
+            color: #A7A7A7;
+
+        }
+
+        .right .one {
+            display: flex;
+
+        }
+
+        .right .one .yourbox {
+            line-height: 44px;
+            padding-left: 20px;
+            width: 213px;
+            height: 44px;
+            border: 1px solid #E2E2E2;
+            font-size: 15px;
+            font-family: AvenirNext-Medium, AvenirNext;
+            font-weight: 500;
+            color: #707070;
+        }
+
+        .right .one .uploadbox {
+            line-height: 46px;
+            text-align: center;
+            width: 154px;
+            height: 46px;
+            background: #858585;
+            border-radius: 5px;
+            font-size: 18px;
+            font-family: AvenirNext-DemiBold, AvenirNext;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+
+        .right .event {
+            margin: 31px 0 15px;
+            font-size: 12px;
+            font-family: AvenirNext-DemiBold, AvenirNext;
+            font-weight: 600;
+            color: #4A4A4A;
+            line-height: 16px;
+        }
+
+        .right .eventbox {
+            line-height: 40px;
+            width: 474px;
+            height: 40px;
+            background: #FFFFFF;
+            border-radius: 4px;
+            border: 1px solid #DDE0E8;
+            padding-left: 20px;
+            font-size: 16px;
+            font-family: AvenirNext-Regular, AvenirNext;
+            font-weight: 400;
+            color: #5A575B;
+        }
+
+        .right .two {
+            display: flex;
+            margin: 30px 0 15px;
+        }
+
+        .right .two .location {
+
+            font-size: 12px;
+            font-family: AvenirNext-DemiBold, AvenirNext;
+            font-weight: 600;
+            color: #4A4A4A;
+        }
+
+        .right .two .date {
+            margin: 0 0 0 191px;
+        }
+
+        .right .a {
+            display: flex;
+        }
+
+        .a .bri {
+            width: 223px;
+            height: 40px;
+            background: #FFFFFF;
+            border-radius: 4px;
+            border: 1px solid #DDE0E8;
+            padding-left: 20px;
+            font-size: 16px;
+            font-family: AvenirNext-Regular, AvenirNext;
+            font-weight: 400;
+            color: #697B8C;
+            line-height: 40px;
+        }
+
+        .a .oct {
+            margin-left: 30px;
+            width: 181px;
+            height: 40px;
+            background: #FFFFFF;
+            border-radius: 4px;
+            border: 1px solid #DDE0E8;
+            padding-left: 20px;
+            font-size: 16px;
+            font-family: AvenirNext-Regular, AvenirNext;
+            font-weight: 400;
+            color: #697B8C;
+            line-height: 40px;
+        }
+
+
+        .right .three {
+            display: flex;
+            margin: 30px 0 15px 0px;
+        }
+
+        .right .three .location {
+
+            font-size: 12px;
+            font-family: AvenirNext-DemiBold, AvenirNext;
+            font-weight: 600;
+            color: #4A4A4A;
+        }
+
+        .right .three .date {
+            margin: 0 0 0 191px;
+        }
+
+        .a .exd {
+            width: 222px;
+        }
+
+        .new {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            display: flex;
+        }
+
+        .new .sate {
+            margin-right: 148px;
+            font-size: 12px;
+            font-family: AvenirNext-DemiBold, AvenirNext;
+            font-weight: 600;
+            color: #4A4A4A;
+        }
+
+        .new .zip {
+            margin-right: 134px;
+        }
+
+        .new .city {
+            margin-right: 147px;
+        }
+
+        .last {
+            display: flex;
+        }
+
+        .cen {
+            margin-right: 30px;
+            padding-left: 20px;
+            width: 153px;
+            height: 40px;
+            background: #FFFFFF;
+            border-radius: 4px;
+            border: 1px solid #DDE0E8;
+            font-size: 16px;
+            font-family: AvenirNext-Regular, AvenirNext;
+            font-weight: 400;
+            color: #697B8C;
+            line-height: 40px;
+        }
+
+        .six {
+            margin-right: 30px;
+            padding-left: 20px;
+            width: 123px;
+            height: 40px;
+            background: #FFFFFF;
+            border-radius: 4px;
+            border: 1px solid #DDE0E8;
+            font-size: 16px;
+            font-family: AvenirNext-Regular, AvenirNext;
+            font-weight: 400;
+            color: #697B8C;
+            line-height: 40px;
+        }
+
+
+        .wis {
+            margin-right: 30px;
+            padding-left: 20px;
+            width: 143px;
+            height: 40px;
+            background: #FFFFFF;
+            border-radius: 4px;
+            border: 1px solid #DDE0E8;
+            font-size: 16px;
+            font-family: AvenirNext-Regular, AvenirNext;
+            font-weight: 400;
+            color: #697B8C;
+            line-height: 40px;
+        }
+
+
+        .nor {
+            padding-left: 20px;
+            width: 173px;
+            height: 40px;
+            background: #FFFFFF;
+            border-radius: 4px;
+            border: 1px solid #DDE0E8;
+            font-size: 16px;
+            font-family: AvenirNext-Regular, AvenirNext;
+            font-weight: 400;
+            color: #697B8C;
+            line-height: 40px;
+        }
+
+        .anniu {
+            padding-left: 386px;
+            display: flex;
+            margin-top: 55px;
+        }
+
+        .bt1 {
+            width: 156px;
+            height: 48px;
+            background: rgba(60, 55, 55, 0.2200);
+            border-radius: 5px;
+            font-size: 18px;
+            font-family: AvenirNext-DemiBold, AvenirNext;
+            font-weight: 600;
+            color: #A0A0A0;
+            line-height: 48px;
+            text-align: center;
+        }
+
+        .bt2 {
+            width: 100px;
+            height: 46px;
+            background: #4B53B9;
+            border-radius: 5px;
+            font-size: 18px;
+            font-family: AvenirNext-DemiBold, AvenirNext;
+            font-weight: 600;
+            color: #FFFFFF;
+            line-height: 46px;
+            text-align: center;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left">
+            <div class="why">
+                Why Use External It Support
+            </div>
+            <div class="down">
+                Download Anything Now A <br> Days
+            </div>
+
+            <div class="ret">
+                Vestibulum rutrum quam vitae <br>
+                fringilla tincidunt. Suspendisse nec <br>
+                tortor urna. Ut laoreet sodales ni.
+            </div>
+
+            <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng5ad61bfca7327eda46b84a1984cbeac4a9a4d65ce5573939ec04d6f19d452ff7"
+                alt="">
+        </div>
+        <div class="right">
+            <div class="addion">
+                Additional information
+            </div>
+
+            <div class="person">
+                Personal Information
+            </div>
+
+            <div class="one">
+                <div class="yourbox">
+                    Yourimage.jpeg
+                </div>
+                <div class="uploadbox">
+                    Upload New
+                </div>
+            </div>
+
+            <div class="event">
+                EVENT NAME
+            </div>
+
+            <div class="eventbox">
+                Event Name
+            </div>
+
+            <div class="two">
+                <div class="location">
+                    LOCATION
+                </div>
+
+                <div class="location date">
+                    DATE
+                </div>
+            </div>
+
+            <div class="a">
+                <div class="bri">
+                    425 Brisa Causeway
+                </div>
+
+                <div class="oct">
+                    16 Oct 2017
+                </div>
+
+                <img src="https://test-order-qzc.oss-cn-chengdu.aliyuncs.com/ai-html/121.png" alt="">
+
+            </div>
+
+            <div class="three">
+                <div class="location">
+                    START TIME
+                </div>
+
+                <div class="location date">
+                    END TIME
+                </div>
+            </div>
+
+
+            <div class="a">
+                <div class="bri">
+                    02:36PM
+                </div>
+
+                <div class="oct exd">
+                    12:14AM
+                </div>
+
+            </div>
+
+            <div class="new">
+                <div class="sate">
+                    STATE
+                </div>
+                <div class="sate zip">
+                    ZIP
+                </div>
+                <div class="sate city">
+                    CITY
+                </div>
+                <div class="sate">
+                    STREET
+                </div>
+            </div>
+
+            <div class="last">
+                <div class="cen">
+                    Central
+                </div>
+                <div class="six">
+                    666
+                </div>
+                <div class="wis">
+                    Wisozkton
+                </div>
+                <div class="nor">
+                    North Kiarafurt
+                </div>
+            </div>
+
+            <div class="anniu">
+                <div class="bt1">
+                    Save as draft
+
+                </div>
+                <div class="bt2">
+                    Submit
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>

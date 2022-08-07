@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            /* border: 1px red solid; */
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        .box {
+            width: 1440px;
+            height: 922px;
+            background: #FFFFFF;
+            display: flex;
+        }
+
+        .left {
+            padding: 108px 53px 584px 39px;
+            position: relative;
+
+            height: 922px;
+            background: rgba(63, 60, 60, 0.9900);
+
+        }
+
+        .left .one {
+
+            display: flex;
+            margin-bottom: 35px;
+        }
+
+        .circle {
+            width: 26px;
+            height: 26px;
+            background: #C5C5C5;
+            border-radius: 50%;
+        }
+
+        .zero{
+            background-color: #fff;
+        }
+
+        .person {
+            font-size: 12px;
+            font-family: AvenirNext-DemiBold, AvenirNext;
+            font-weight: 600;
+            color: #CACACA;
+            line-height: 21px;
+        }
+
+        .other {
+            color: #FFFFFF;
+        }
+
+
+
+        .circle {
+            margin-right: 24px;
+            text-align: center;
+            font-size: 12px;
+            font-family: AvenirNext-DemiBold, AvenirNext;
+            font-weight: 600;
+            color: #4B53B9;
+            line-height: 26px;
+
+        }
+
+        .oneline {
+
+            height: 230px;
+            width: 1px;
+            background: rgba(197, 197, 197, 0.28);
+            position: absolute;
+            top: 135px;
+            left: 51px;
+        }
+
+        .common {
+
+            height: 1px;
+            /* background: rgb(197, 197, 197); */
+            background-color: #fff;
+        }
+
+        .line1 {
+            position: absolute;
+            width: 189px;
+            top: 180px;
+            left: 88px;
+        }
+
+        .line2 {
+            position: absolute;
+            width: 113px;
+            top: 241px;
+            left: 88px;
+        }
+
+        .line3 {
+            position: absolute;
+            width: 168px;
+            top: 302px;
+            left: 88px;
+        }
+
+        .line4 {
+            position: absolute;
+            width: 159px;
+            top: 364px;
+            left: 88px;
+        }
+
+        .right {
+            padding-left: 100px;
+            padding-top: 86px;
+        }
+
+        .form {
+            margin-bottom: 9px;
+            font-size: 30px;
+            font-family: AvenirNext-DemiBold, AvenirNext;
+            font-weight: 600;
+            color: #4B53B9;
+            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5000);
+        }
+
+        .info {
+            font-size: 20px;
+            font-family: AvenirNext-Medium, AvenirNext;
+            font-weight: 500;
+            color: #A7A7A7;
+            margin-bottom: 60px;
+        }
+
+        .moblie {
+            margin-bottom: 14px;
+            font-size: 12px;
+            font-family: AvenirNext-DemiBold, AvenirNext;
+            font-weight: 600;
+            color: #000000;
+        }
+
+        .phonenum {
+            font-size: 16px;
+            font-family: AvenirNext-Regular, AvenirNext;
+            font-weight: 400;
+            color: #697B8C;
+            line-height: 60px;
+            margin-bottom: 35px;
+        }
+
+        .infobox {
+            padding-left: 20px;
+            width: 453px;
+            height: 60px;
+            background: #FFFFFF;
+            border-radius: 7px;
+            border: 1px solid #DBDBDB;
+        }
+
+        .anniu {
+            display: flex;
+            margin-left: 197px;
+        }
+
+        .back {
+            width: 120px;
+            height: 50px;
+            background: rgba(60, 55, 55, 0.2200);
+            border-radius: 5px;
+            text-align: center;
+            font-size: 18px;
+            font-family: AvenirNext-DemiBold, AvenirNext;
+            font-weight: 600;
+            color: rgba(60, 55, 55, 0.4000);
+            line-height: 50px;
+        }
+
+        .next {
+            margin-left: 55px;
+            text-align: center;
+            width: 90px;
+            height: 50px;
+            background: #4B53B9;
+            border-radius: 5px;
+            font-size: 18px;
+            font-family: AvenirNext-DemiBold, AvenirNext;
+            font-weight: 600;
+            color: #FFFFFF;
+            line-height: 50px;
+        }
+
+        .dis{
+            margin-bottom: 67px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left">
+            <div class="oneline">
+
+            </div>
+            <div class="one">
+
+                <div class="circle zero">
+                    1
+                </div>
+                <div class="person other">
+                    PERSONAL INFORMATION
+                </div>
+            </div>
+
+            <div class="one">
+
+                <div class="circle">
+                    2
+                </div>
+                <div class="person line">
+                    PROFESSIONAL INFORMATION
+                </div>
+            </div>
+
+            <div class="one">
+                <div class="circle">
+                    3
+                </div>
+                <div class="person">
+                    YOUR ACADEMICS
+                </div>
+            </div>
+
+            <div class="one">
+                <div class="circle">
+                    4
+                </div>
+                <div class="person">
+                    Work Eligibility VERIfication
+                </div>
+            </div>
+
+            <div class="one">
+                <div class="circle">
+                    5
+                </div>
+                <div class="person">
+                    TERMS AND CONDITIONS
+                </div>
+            </div>
+
+            <div class="common line1">
+
+            </div>
+
+            <div class="common line2">
+
+            </div>
+
+            <div class="common line3">
+
+            </div>
+
+            <div class="common line4">
+
+            </div>
+        </div>
+        <div class="right">
+
+            <div class="form">
+                Application Form
+            </div>
+
+            <div class="info">
+                Personal Information
+            </div>
+
+            <div class="moblie">
+                PHONE NUMBER (MOBILE)
+            </div>
+
+            <div class="phonenum infobox">
+                +977 - (000) - 0000312
+            </div>
+            <div class="moblie">
+                EMAIL
+            </div>
+            <div class="phonenum infobox">
+                ishan02016@gmail.com
+            </div>
+            <div class="moblie">
+                STATE
+            </div>
+            <div class="phonenum infobox">
+                Kathmandu
+            </div>
+
+            <div class="moblie">
+                STREET ADDRESS
+            </div>
+            <div class="phonenum infobox dis">
+                Sanepa Height
+            </div>
+
+
+            <div class="anniu">
+                <div class="back">
+                    Go back
+                </div>
+
+                <div class="next">
+                    Next
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
