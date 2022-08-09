@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+             /* border: 1px  solid red ;  */
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        .box {
+            width: 2400px;
+
+            background: #FBFBFB;
+            padding: 150px 130px 150px 150px;
+        }
+
+        .content {
+            display: flex;
+        }
+
+
+        .left {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .left .top {
+            height: 177px;
+            position: relative;
+            align-items: center;
+            padding: 0 0 0 84px;
+            display: flex;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 24px 0px #EBEDEF;
+        }
+
+        .left .top .one {
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .left .top .one .home {
+            font-size: 22px;
+            font-family: LucidaGrande;
+            color: #70727C;
+
+        }
+
+        .left .top .one .greenline {
+            width: 78px;
+            height: 5px;
+            background: #39DD91;
+            position: absolute;
+            bottom: 0;
+            left: 85px;
+        }
+
+        .left .top .two {
+
+            font-size: 22px;
+            font-family: LucidaGrande;
+            color: #A1A4AE;
+            margin-left: 85px;
+
+        }
+
+        .left .top .notice {
+            margin-left: 373px;
+            margin-right: 57px;
+        }
+
+        .left .mid {
+            margin-top: 90px;
+            padding-top: 68px;
+            display: flex;
+            flex-direction: column;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 24px 0px #EBEDEF;
+        }
+
+        .left .mid .three {
+            padding-right: 68px;
+            padding-left: 74px;
+            display: flex;
+
+        }
+
+        .note {
+            line-height: 56px;
+            font-size: 24px;
+            font-family: LucidaGrande;
+            color: #70727C;
+        }
+
+        .jia {
+            margin-left: 990px;
+            font-size: 46px;
+            font-family: LucidaGrande;
+            color: #39DD92;
+
+        }
+
+        .left .mid .four {
+
+            height: 126px;
+            background: #FBFBFB;
+            display: flex;
+            align-items: center;
+            background-color: #FFFCF2;
+            margin-top: 63px;
+            margin-bottom: 48px;
+        }
+
+        .re {
+            margin-left: 74px;
+            margin-right: 731px;
+            font-size: 26px;
+            font-family: SFNS-Regular, SFNS;
+            font-weight: 400;
+            color: #70727C;
+        }
+
+        .common {
+            padding-left: 74px;
+            font-size: 26px;
+            font-family: SFNS-Regular, SFNS;
+            font-weight: 400;
+            color: #70727C;
+            padding-right: 68px;
+
+        }
+
+        .ki {
+            margin-top: 96px;
+            margin-bottom: 84px;
+        }
+
+        .left .bottom {
+            padding: 75px 66px 71px 72px;
+            margin-top: 91px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 24px 0px #EBEDEF;
+        }
+
+        .a {
+            display: flex;
+            font-size: 24px;
+            font-family: LucidaGrande;
+            color: #70727C;
+            align-items: center;
+            margin-bottom: 112px;
+        }
+
+        .pro {
+            margin: 0 946px 0 27px;
+        }
+
+        .b {
+            display: flex;
+            font-size: 26px;
+            font-family: SFNS-Regular, SFNS;
+            font-weight: 400;
+            color: #70727C;
+            align-items: center;
+            margin-bottom: 96px;
+        }
+
+        .co {
+            margin-right: 942px;
+
+
+        }
+
+        .loop {
+            margin-right: 1079px;
+
+        }
+
+        .cut {
+            margin-right: 1010px;
+        }
+
+        .c {
+            margin-bottom: 0;
+        }
+
+        .right {
+            margin-left: 88px;
+        }
+
+        .greenbox {
+            width: 770px;
+            height: 600px;
+            background: #39DD91;
+            box-shadow: 0px 0px 24px 0px #EBEDEF;
+            opacity: 0.9;
+            margin-left: 24px;
+            padding-top: 118px;
+        }
+
+        .write {
+            margin: 0px 0 0 85px;
+            font-size: 29px;
+            font-family: LucidaGrande;
+            color: #F6F6F6;
+            border-left: 1px solid #34C382;
+            padding-left: 6px;
+        }
+
+        .fuhao {
+            margin-top: 358px;
+            display: flex;
+            margin-left: 554px;
+        }
+
+        .cha {
+            margin-right: 50px;
+        }
+
+        .chat {
+            padding: 92px 0 0 71px;
+            margin-top: 134px;
+            width: 774px;
+            height: 825px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 24px 0px #EBEDEF;
+            position: relative;
+        }
+
+        .diyju {
+            display: flex;
+        }
+
+        .chat .info {
+
+            font-size: 27px;
+            font-family: SFNS-Regular, SFNS;
+            font-weight: 400;
+            color: #9BA2AD;
+            margin: 35px 0 0 68px;
+
+        }
+
+        .sty {
+
+            font-size: 22px;
+            font-family: SFNS-Regular, SFNS;
+            font-weight: 400;
+            color: #9CA3AF;
+
+        }
+
+        .pm {
+            margin-left: 543px;
+            margin-top: 55px;
+        }
+
+        .how {
+            margin-left: 149px;
+            margin-top: 66px;
+        }
+
+        .am {
+            margin-left: 112px;
+            margin-top: 56px;
+        }
+
+        .dierju {
+            display: flex;
+            margin-top: 50px;
+            align-items: center;
+        }
+
+        .sandian {
+            margin-left: 33px;
+        }
+
+        .heng {
+            position: absolute;
+            bottom: 152px;
+            right: 0;
+          
+            width: 773px;
+            height: 1px;
+            background: #EFEFEF;
+        }
+
+        .jieshu {
+            display: flex;
+            margin-top: 116px;
+        }
+
+        .send {
+            margin-right: 347px;
+            font-size: 22px;
+            font-family: LucidaGrande;
+            color: #70727C;
+
+        }
+
+        .face{
+            margin-right: 34px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="content">
+            <div class="left">
+                <div class="top">
+                    <div class="one">
+                        <div class="home">
+                            HOME
+                        </div>
+
+                        <div class="greenline">
+
+                        </div>
+                    </div>
+                    <div class="two">
+                        PROFILE
+                    </div>
+                    <div class="two">
+                        CONTACT
+                    </div>
+                    <div class="two">
+                        BLOG
+                    </div>
+
+                    <img class="notice"
+                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngeeb8bac309378dfd155a1855b0f7afffc371d1a606996ed2adfebd2608d9be4e"
+                        alt="" width="35px" height="38px">
+                    <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng7e6530e5d6479b1c5925f1fa6f7906fbd986fc59d2313c9de024084d371cacce"
+                        width="95px" height="95px" alt="">
+                </div>
+
+                <div class="mid">
+                    <div class="three">
+                        <div class="note">
+                            NOTES - 3
+                        </div>
+                        <div class="jia">
+                            +
+                        </div>
+                    </div>
+                    <div class="four">
+                        <div class="re">
+                            Re-design yr porolio bthis Mar
+                        </div>
+                        <img width="30px" height="35px"
+                            src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng094a18af426912fececf872c0905925cfeea1a347902e68824a39678805017d9"
+                            alt="">
+                    </div>
+
+                    <div class="learn common">
+                        Learn jQuerk to Jason about this
+                    </div>
+                    <div class="ki common">
+                        GivawafrUI KI
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <div class="a">
+                        <img class="dir"
+                            src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng4499897603c6d87d08d0bbebc7d16225a0705b1c9d10c7a97d13c13009d4c25d"
+                            alt="">
+                        <div class="pro">
+                            PROJECTS
+                        </div>
+                        <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng2a90217dfe3d3d662347804e58fc1460eff5bbd3ff3e5ee78a8e9b024b7a3ce4"
+                            alt="">
+                    </div>
+
+                    <div class="b">
+                        <div class="co">
+                            Coco UI Kit - V1
+                        </div>
+                        <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngcc153b965a3984f695746b2d7bbc45c15821be76f255b053e03e762de1706e91"
+                            width="22px" height="22px" alt="">
+                    </div>
+
+                    <div class="b">
+                        <div class="loop">
+                            Loop
+                        </div>
+                        <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngb23132119302037a8e7dcb3b35d0d2132a9d7f96ca5eea7336ca4ef27cfb30eb"
+                            width="22px" height="22px" alt="">
+                    </div>
+
+                    <div class="b c">
+                        <div class="cut">
+                            Cut & Pste
+                        </div>
+                        <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPnge8211226665f82aa6a9c453a7eff222d5cbfc36d785ba12ce89dd64f9844de61"
+                            width="22px" height="22px" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="right">
+                <div class="greenbox">
+                    <div class="write">
+                        Write note
+                    </div>
+                    <div class="fuhao">
+                        <img class="cha"
+                            src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng32a9f539ccfd6552cb0e5952fef81078127bd24ad58cbc067056dd9f55f97f72"
+                            alt="">
+                        <img class="gou"
+                            src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngc553484a5ae93586010300f46b7fe0f3752e1089aa80cbbb8abaabf686db77bc"
+                            alt="">
+                    </div>
+                </div>
+                <div class="chat">
+                    <div class="diyju">
+                        <div class="first">
+                            <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6cc21825cd606eaa9102c458b6c37e14366d839a2125d01ee6af3ccbb67660e1"
+                                alt="">
+                        </div>
+                        <div class="info">
+                            In the 80s, the hair accessory was <br>
+                            invaluable. Almost every style involved <br>
+                            some sort of hair accessory.
+                        </div>
+                    </div>
+                    <div class="pm sty">
+                        06:40 PM
+                    </div>
+
+                    <div class="how sty">
+                        How do you even know these things ??
+                    </div>
+
+                    <div class="am sty">
+                        06:41 PM
+                    </div>
+
+                    <div class="dierju">
+
+                        <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6cc21825cd606eaa9102c458b6c37e14366d839a2125d01ee6af3ccbb67660e1"
+                            alt="">
+                        <img class="sandian" width="49px" height="16px"
+                            src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPnged3d8e1b06d0625632ab87de315d67faf4591f249ca33a201225ab9505f1f104"
+                            alt="">
+                    </div>
+
+                    <div class="heng"></div>
+                    <div class="jieshu">
+                        <div class="send">
+                            Send a message
+                        </div>
+                        <img class="face" src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngb9974dc276df8a49c611687b434d26a27dc199f0cd5a9a676e71a52915d05805"
+                            alt="">
+                        <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng619e4a715c7df2903abd09b81de1587c6971183e295350f955a28403a8e54d63"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
