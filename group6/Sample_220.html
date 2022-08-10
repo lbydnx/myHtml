@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            /* border: 1px solid red; */
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        .box {
+           position: relative;
+            width: 1440px;
+            background-repeat: no-repeat;
+            background-position: -227px  -211px;
+            background-image: url(https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPnga238f203c7d80df74c74d265a57263b009d0d37929b4bcee7138941a911dc0b6);
+        }
+
+       
+
+      
+
+        .top {
+            padding: 23px 0;
+        }
+
+        .top .nav {
+            display: flex;
+            align-items: center;
+            padding-left: 204px;
+        }
+
+        .top .nav .pra {
+            font-size: 24px;
+            font-family: Helvetica;
+            color: #FFFFFF;
+            margin: 0 247px 0 10px;
+
+        }
+
+        .top .nav .com {
+            font-size: 17px;
+            font-family: Helvetica;
+            color: #FFFFFF;
+        }
+
+        .top .nav .sol {
+            margin-right: 67px;
+        }
+
+        .top .nav .bus {
+            margin-right: 123px;
+        }
+
+        .top .nav .sup {
+            margin-right: 52px;
+        }
+
+        .top .nav .ss {
+            margin-right: 4px;
+        }
+
+        .top .base {
+            margin-top: 72px;
+            padding-left: 196px;
+        }
+
+        .top .base .midbox {
+            display: flex;
+            align-items: center;
+            padding-left: 5px;
+            background: rgba(63, 79, 246,.19);
+            border-radius: 100px;
+            /* opacity: 0.19; */
+            width: 529px;
+            height: 27px;
+
+
+        }
+
+        .top .base .midbox .ness {
+            width: 75px;
+            height: 17px;
+          
+            background: #007EE5;
+            border-radius: 100px;
+            margin-right: 9px;
+            padding-left: 9px;
+            font-size: 13px;
+            font-family: Helvetica;
+            color: #FFFFFF;
+            line-height: 17px;
+        }
+
+        .top .base .midbox .secu {
+
+            font-size: 14px;
+            font-family: Helvetica;
+            color: #FFFFFF;
+        }
+
+        .top .tablebox {
+            display: flex;
+            padding-left: 196px;
+            margin-top: 54px;
+        }
+
+        .tablebox .boxleft {
+            padding-top: 28px;
+            margin-right: 96px;
+        }
+
+        .tablebox .boxleft .store {
+
+            font-size: 39px;
+            font-family: Helvetica;
+            color: #FFFFFF;
+
+        }
+
+        .tablebox .boxleft .all {
+            font-size: 17px;
+            font-family: Helvetica;
+            color: #D9FCFF;
+            margin-top: 15px;
+        }
+
+        .tablebox .boxleft .start {
+            width: 166px;
+            height: 40px;
+            background: rgba(171, 64, 64, 0.8000);
+            box-shadow: 0px 2px 4px 0px rgba(100, 100, 100, 0.5000);
+            border-radius: 20px;
+            opacity: 0.9;
+            text-align: center;
+            margin-top: 36px;
+            font-size: 16px;
+            font-family: Helvetica;
+            color: #007EE5;
+            line-height: 40px;
+        }
+
+        .boxright {
+            padding-top: 20px;
+            width: 390px;
+            height: 500px;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.0800);
+        }
+
+        .boxright .one {
+            padding: 0 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .boxright .one .up {
+
+            font-size: 20px;
+            font-family: Helvetica;
+            color: #585858;
+
+        }
+
+        .boxright .one .in {
+
+            font-size: 14px;
+            font-family: Helvetica;
+            color: #007EE5;
+
+        }
+
+        .boxright .two {
+            padding-left: 15px;
+            margin-top: 20px;
+        }
+
+        .boxright .two .with {
+            text-align: center;
+            font-size: 16px;
+            font-family: Helvetica;
+            color: #FFFFFF;
+            line-height: 26px;
+            padding-top: 3px;
+            width: 330px;
+            height: 50px;
+            background: linear-gradient(305deg, #007EE5 0%, #05B3FF 100%, #5533FF 100%);
+            border-radius: 3px;
+            border: 1px solid rgba(32, 53, 128, 0.1600);
+        }
+
+        .boxright .or {
+            text-align: center;
+            margin-top: 22px;
+            font-size: 16px;
+            font-family: Helvetica;
+            color: #DCDCDC;
+        }
+
+        .boxright .three {
+            padding-left: 15px;
+            margin-top: 22px;
+        }
+
+        .boxright .three .email {
+            padding-left: 15px;
+            font-size: 14px;
+            font-family: Helvetica;
+            color: #DCDCDC;
+            line-height: 50px;
+            width: 330px;
+            height: 50px;
+            background: rgba(32, 53, 128, 0.0100);
+            border-radius: 3px;
+            border: 1px solid rgba(32, 53, 128, 0.1600);
+        }
+
+        .boxright .four {
+            padding-left: 12px;
+            margin-top: 22px;
+            display: flex;
+            align-items: center;
+        }
+
+        .boxright .four .remenber {
+
+            font-size: 14px;
+            font-family: Helvetica;
+            color: #585858;
+            margin: 0 34px 0 -10px;
+        }
+
+        .boxright .four .login {
+
+            font-size: 16px;
+            font-family: Helvetica;
+            color: #FFFFFF;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            width: 166px;
+            height: 40px;
+            background: linear-gradient(302deg, #007EE5 0%, #05A0FF 100%, #5533FF 100%);
+            border-radius: 3px;
+            border: 1px solid rgba(32, 53, 128, 0.1600);
+        }
+
+        .boxright .four .login .jiantou {
+            margin-left: 10px;
+        }
+
+        .boxright .five {
+            padding-left: 12px;
+            margin-top: 20px;
+
+            font-size: 14px;
+            font-family: Helvetica;
+            color: #007EE5;
+
+        }
+
+        .boxright .six {
+            padding-left: 50px;
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .boxright .six .yi {
+
+            font-size: 14px;
+            font-family: Helvetica;
+            color: #8B8B8B;
+
+
+        }
+
+        .boxright .six .load {
+
+            color: #007EE5;
+        }
+
+
+        .end {
+            display: flex;
+            margin-top: 156px;
+            padding-left: 194px;
+            padding-bottom: 33px
+        }
+
+        .end .zhuo {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .end .english {
+            display: flex;
+            align-items: center;
+        }
+
+        .end .english .state {
+            margin-left: 12px;
+            font-size: 15px;
+            font-family: Helvetica;
+            color: #007EE5;
+
+        }
+
+        .end .rato {
+            display: flex;
+            align-items: center;
+            margin-top: 131px;
+        }
+
+        .end .rato .c {
+            width: 12px;
+            height: 12px;
+            border: 1px solid #CFD7DF;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 8px;
+            font-size: 13px;
+            font-family: Helvetica;
+            color: #CFD7DF;
+
+        }
+
+        .end .rato .o {
+            margin-left: 3px;
+            font-size: 15px;
+            font-family: Helvetica;
+            color: #CFD7DF;
+
+        }
+
+        .you {
+            margin-left: 278px;
+            display: flex;
+
+            font-size: 15px;
+            font-family: Helvetica;
+            color: #8998AA;
+
+        }
+
+        .you .num1{
+            margin-right: 89px;
+        }
+
+        .you .num2{
+            margin-right: 91px;
+        }
+
+        .you .num3{
+            margin-right: 59px;
+        }
+
+        .you .yy{
+            margin-bottom: 11px;
+        }
+
+        .you .yy1{
+            margin-bottom: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="top">
+            <div class="nav">
+
+                <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPnge6e671ec61129d2c9799a262855d9b4c6a74b96ecb1231c582a31bf131b265e5"
+                    alt="">
+                <div class="pra">
+                    Prato
+                </div>
+                <div class="com sol">
+                    Solutions
+                </div>
+                <div class="com sol">
+                    Pricing
+                </div>
+                <div class="com bus">
+                    Prato Business
+                </div>
+                <div class="com sup">
+                    Support
+                </div>
+                <div class="com ss">
+                    Sign in
+                </div>
+                <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng99810e3d1ca907f021f0ba6c8cb1ca3d4594d60f041ac43a8edbb194566807eb"
+                    alt="">
+            </div>
+            <div class="base">
+                <div class="midbox">
+                    <div class="ness">
+                        BUSINESS
+                    </div>
+                    <div class="secu">
+                        Productivity, security, and collaboration await you with Prato Business.
+                    </div>
+                </div>
+
+            </div>
+            <div class="tablebox">
+                <div class="boxleft">
+                    <div class="store">
+                        Store, sync, and share files online
+                    </div>
+                    <div class="all">
+                        All your photos, videos, and documents available anywhere, anytime.
+                    </div>
+                    <div class="start">
+                        Start you free trial
+                    </div>
+                </div>
+
+                <div class="boxright">
+                    <div class="one">
+                        <div class="up">
+                            Sign in
+                        </div>
+                        <div class="in">
+                            Sign up
+                        </div>
+                    </div>
+                    <div class="two">
+                        <div class="with">
+                            Sign in with <br> Google
+                        </div>
+                    </div>
+                    <div class="or">
+                        or
+                    </div>
+                    <div class="three">
+                        <div class="email">
+                            Email Address
+                        </div>
+                    </div>
+
+                    <div class="three">
+                        <div class="email">
+                            Password
+                        </div>
+                    </div>
+
+                    <div class="four">
+                        <img src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng1e2450669a9b43eb3f6cbdd876ee427d5af9489c7ecab1871a16e749345754db"
+                            alt="">
+                        <div class="remenber">
+                            Remember me
+                        </div>
+                        <div class="login">
+                            Sign in
+                            <img class="jiantou"
+                                src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng99810e3d1ca907f021f0ba6c8cb1ca3d4594d60f041ac43a8edbb194566807eb"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="five">
+                        Forgot your password?
+                    </div>
+
+                    <div class="six">
+                        <div class="get yi">
+                            Get Prato on your desktop- &nbsp;
+                        </div>
+                        <div class="load yi">
+                            Download now
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="end">
+            <div class="zhuo">
+                <div class="english">
+                    <img width="11px" height="12px"
+                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng343e6e75bed3b232e487a08657eea038f25293a37c2d24454893ccdea62d66c4"
+                        alt="">
+                    <div class="state">
+                        English (United States)
+                    </div>
+                </div>
+
+                <div class="rato">
+                    <div class="c">
+                        c
+                    </div>
+
+                    <div class="o">
+                        Prato
+                    </div>
+                </div>
+            </div>
+
+            <div class="you">
+                <div class="num1">
+                    <div class="yy1">
+                        Prato
+                    </div>
+                    <div class="yy">
+                        Install
+                    </div>
+                    <div class="yy">
+                        Mobile
+                    </div>
+                    <div class="yy">
+                        Pricing
+                    </div>
+                    <div class="yy">
+                        Business
+                    </div>
+                    <div class="yy">
+                        Enterprise
+                    </div>
+                    <div class="yy">
+                        Tour
+                    </div>
+                </div>
+                <div class="num2">
+                    <div class="yy1">
+                        About us
+                    </div>
+                    <div class="yy">
+                        Prato Blog
+                    </div>
+                    <div class="yy">
+                        About
+                    </div>
+                    <div class="yy">
+                        Branding
+                    </div>
+                    <div class="yy">
+                        News
+                    </div>
+                    <div class="yy">
+                        Jobs
+                    </div>
+                </div>
+                <div class="num3">
+                    <div class="yy1">
+                        Support
+                    </div>
+                    <div class="yy">
+                        Help Center
+                    </div>
+                    <div class="yy">
+                        Contact us
+                    </div>
+                    <div class="yy">
+                        Copyright
+                    </div>
+                    <div class="yy">
+                        Cookies
+                    </div>
+                    <div class="yy">
+                        Privacy & Terms
+                    </div>
+                </div>
+                <div class="num4">
+                    <div class="yy1">
+                        Community
+                    </div>
+                    <div class="yy">
+                        Referrals
+                    </div>
+                    <div class="yy">
+                        Forum
+                    </div>
+                    <div class="yy">
+                        Twitter
+                    </div>
+                    <div class="yy">
+                        Facebook
+                    </div>
+                    <div class="yy">
+                        Developers
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
