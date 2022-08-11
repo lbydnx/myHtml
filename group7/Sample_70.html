@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            /* border: 1px solid red; */
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        .box {
+            display: flex;
+
+            height: 600px;
+            background: #FFFFFF;
+            /* box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3000); */
+        }
+
+        .left {
+            width: 70px;
+            height: 600px;
+            background: #FFC372;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .right {
+            position: relative;
+            padding-top: 17px;
+            width: 730px;
+            height: 600px;
+            background: #FFFFFF;
+            box-shadow: -16px -12px 20px 0px rgba(0, 0, 0, 0.3000);
+        }
+
+        .right .top {
+            display: flex;
+            justify-content: flex-end;
+
+        }
+
+        .right .top .com {
+            font-size: 14px;
+            font-family: Helvetica;
+            color: #999999;
+            margin-right: 16px;
+        }
+
+        .right .top .pri {
+            color: #409FFF;
+        }
+
+        .right .line {
+            width: 729px;
+            height: 1px;
+            background: #EEEEEE;
+            margin-top: 17px;
+        }
+
+        .right .create {
+            text-align: center;
+            font-size: 14px;
+            font-family: Helvetica;
+            color: #2E2C38;
+            line-height: 17px;
+            margin-top: 64px;
+        }
+
+        .right .content {
+            margin-bottom: 16px;
+            margin-top: 24px;
+            display: flex;
+            padding: 0 179px 0 177px;
+            justify-content: space-between;
+        }
+
+        .right .content .box {
+            width: 180px;
+            height: 130px;
+            display: flex;
+            border-radius: 4px;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 20px;
+            padding-bottom: 9px;
+        }
+
+        .right .content .box1 {
+            width: 180px;
+            height: 130px;
+            background: #409FFF;
+            border-radius: 4px;
+            position: relative;
+
+        }
+
+        .right .content .box1 .clock {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+        }
+
+        .right .content .box2 {
+            width: 180px;
+            height: 130px;
+            background: #CBD3DA;
+            border-radius: 4px;
+            position: relative;
+
+        }
+
+        .right .content .box1 .an {
+            font-size: 18px;
+            font-family: Helvetica;
+            color: #FFFFFF;
+        }
+
+        .right .content .box1 .num {
+            margin: 12px 0 15px;
+            font-size: 20px;
+            font-family: Helvetica;
+            color: #FFFFFF;
+
+        }
+
+
+        .right .content .box1 .save {
+            text-align: center;
+            transform: scale(0.83);
+            font-size: 12px;
+            font-family: Helvetica;
+            color: #FFFFFF;
+
+        }
+
+        .right .content .box2 .an {
+            font-size: 18px;
+            font-family: Helvetica;
+            color: #2E2C38;
+        }
+
+        .right .content .box2 .num {
+            margin: 12px 0 27px;
+            font-size: 20px;
+            font-family: Helvetica;
+            color: #2E2C38;
+
+        }
+
+
+        .right .content .box2 .save {
+            text-align: center;
+            transform: scale(0.83);
+            font-size: 12px;
+            font-family: Helvetica;
+            color: #2E2C38;
+
+        }
+
+        .right .content .box2 .circle {
+            width: 16px;
+            height: 16px;
+            background: #F3F3F3;
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            border-radius: 50%;
+        }
+
+        .right .info {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .right .info .full {
+            width: 368px;
+            height: 40px;
+            background: #FFFFFF;
+            border-radius: 4px;
+            border: 1px solid #CCCCCC;
+            padding-left: 16px;
+
+            margin-bottom: 8px;
+            font-size: 12px;
+            font-family: Helvetica;
+            color: #2E2C38;
+            line-height: 40px;
+        }
+
+        .right .end {
+            /* 记得减去8px */
+            margin-top: 16px;
+            display: flex;
+            padding: 0 204px 0 177px;
+            justify-content: space-between;
+        }
+
+        .right .end .get {
+            width: 135px;
+            height: 40px;
+            background: #CBD3DA;
+            border-radius: 4px;
+
+            text-align: center;
+            font-size: 14px;
+            font-family: Helvetica;
+            color: #FFFFFF;
+            line-height: 40px;
+        }
+
+        .right .end .by {
+
+            font-size: 12px;
+            font-family: Helvetica;
+            color: #2E2C38;
+
+        }
+
+        .right .final {
+            text-align: center;
+            position: absolute;
+            top: 83px;
+            left: 287px;
+            font-size: 22px;
+            font-family: Helvetica;
+            color: #2E2C38;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left">
+            <img src="https://test-order-qzc.oss-cn-chengdu.aliyuncs.com/ai-html/193.png" alt="">
+        </div>
+        <div class="right">
+            <div class="top">
+                <div class="pri com">
+                    Pricing
+                </div>
+
+                <div class="about com">
+                    About us
+                </div>
+
+                <div class="Help com">
+                    Help
+                </div>
+            </div>
+
+            <div class="line">
+
+            </div>
+
+            <div class="create">
+                Create an account to keep track of your customers, and <br>
+                contributors. Already have an account? <a href="#" style="color:#409FFF ;">Log in here</a>
+            </div>
+
+            <div class="content">
+                <div class="box box1">
+                    <div class="an">
+                        Annual
+                    </div>
+
+                    <div class="num">
+                        172 $
+                    </div>
+
+                    <div class="save">
+                        (Save 20% - 14,22 $ per month) <br> Yearly subsriptio
+                    </div>
+                    <img class="clock"
+                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng18c020f26028a5c8dafa7b500246bc7aad234b2fc354f01524467426337a5f32"
+                        alt="">
+                </div>
+                <div class="box box2">
+                    <div class="an">
+                        Monthly
+                    </div>
+
+                    <div class="num">
+                        18 $
+                    </div>
+
+                    <div class="save">
+                        Monthly subsription
+                    </div>
+                    <div class="circle">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="full">
+                    Full name
+                </div>
+                <div class="full">
+                    Email
+                </div>
+                <div class="full">
+                    Password
+                </div>
+            </div>
+
+            <div class="end">
+                <div class="get">
+                    Get started
+                </div>
+                <div class="by">
+                    By clicking this button, you agree to <br> <a style="color:#409FFF ;" href="#">Terms and
+                        conditions.</a>
+                </div>
+            </div>
+
+            <div class="final">
+                Sign up for Team <br> account
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
